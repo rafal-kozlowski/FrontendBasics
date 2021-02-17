@@ -14,7 +14,7 @@
         <h3>Walczymy!</h3>
         <h4>Malymi krokami do przodu</h4>
         <h5>Bedziem sie rozwijac</h5>
-        <h6>Zeby podpic swiat nerdow</h6>
+        <h6>Zeby podbic swiat nerdow</h6>
 
         <p>
             Napiszemy cos pokrotce w pierwszym paragrafie.
@@ -47,9 +47,71 @@
             <li>Punkt numerowany 4</li>
         </ol>
 
+
         <!-- formularz -->
-        <form>
+        
+
+        <form action="form.html" method="post"> 
+        <!-- 
+        - atrybut action oznacza adres, na który wysłane zostaną dane z formularza 
+        (jeśli nie ustawimy mu wartości, wyśle się na ten sam adres, pod którym znajduje się formularz)
+        - atrybut method oznacza metodę przesyłu danych (najpopularniejsze to get i post)
+        - jeśli formularz będziemy obsługiwać przy pomocy JS, nie musimy używać atrybutów method i action
+        -->
+            <div>
+                <label> wpisz tekst </label>
+                <input type="text" name="your_name" >
+            </div>
+
+            <div>
+                <label> wpisz haslo </label>
+                <input type="password" name="your_password">
+            </div>
+
+            <div>
+                <label> zaznacz </label>
+                <input type="checkbox">
+            </div>
+
+            <div>
+                <label> wpisz adres email </label>
+                <input type="email" >  
+            </div>
+
+            <div>
+                <label> wybierz date </label>
+                <input type="date">
+            </div>
+
+            <div>
+                <label> zaznacz </label>
+                <input type="radio">
+            </div>
+
+            <div>
+                <label> wybierz kolor </label>
+                <input type="color">
+            </div>
             
+            <input type="hidden" name="secret_data" value="true">
+            
+            <select name="marka" id="">
+                <option value="1">porsche</option>
+                <option value="2">opel</option>
+                <option value="3">hyundai</option>
+            </select>
+
+            <div>
+                <label> Zadaj pytanie </label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+
+
+
+            <button>Nacisnij przed wyslaniem</button>
+            <!-- button odsyla do strony zadanej w form action, tak samo robi sumbit -->
+
+            <input type="submit" name="Wyslij">
         </form>
 
     </body>
