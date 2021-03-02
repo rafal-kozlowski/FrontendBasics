@@ -28,9 +28,18 @@
             </p>
         </p>
         <p>I paragraf za paragrafem - na zewnatrz paragrafu.</p>
-        <p>Paragraf ma zasieg blokowy - cala szerokosc strony.</p>
         <span>Span ma zasieg liniowy.</span>
         <span>Potwierdza to kolejny span za spanem.</span>
+        <p>Paragraf ma zasieg blokowy - cala szerokosc strony.</p>
+        
+
+        <a href="https://www.livescore.com/en/" target="_blank" title="livescore.com">Wyniki meczow na zywo</a>
+        <!-- 
+        title - tytuł linku (widoczny w "dymku" po najechaniu kursorem)
+        target - w jaki sposób link ma być otwarty (_blank - nowa karta)
+         -->
+
+         <img src="./pictures/fota.jpg" alt="tu powinno byc zdjecie">
 
         <!-- dodanie listy -->
         <ul>
@@ -75,7 +84,12 @@
 
             <div>
                 <label> wpisz adres email </label>
-                <input type="email" >  
+                <input type="email" required>  
+                <!-- 
+                mozna dodac atrybut required, ktory sprawdzi czy wymagane pole jest wypelnione 
+                i czy zawartosc jest poprawnym adresem email.
+                Mechanizm natywnej walidacji formularza można oczywiście wyłączyć za pomocą atrybutu novalidate
+                -->
             </div>
 
             <div>
@@ -113,6 +127,64 @@
 
             <input type="submit" name="Wyslij">
         </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ENCJE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <xmp>&nbsp;</xmp>
+                    </td>
+                    <td>twarda spacja (żeby uniknąć przeniesienia wyrazu do nowej linii)</td>
+                </tr>
+                <tr>
+                    <td>
+                        <xmp>&lt;</xmp> 
+                    </td>
+                    <td>znak mniejszości &lt;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <xmp>&gt;</xmp> 
+                    </td>
+                    <td>znak większości &gt;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <xmp>&laquo;</xmp> 
+                    </td>
+                    <td>strzałka w lewo &laquo;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <xmp>&raquo;</xmp> 
+                    </td>
+                    <td>strzałka w prawo &raquo;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <xmp>&amp;</xmp> 
+                    </td>
+                    <td>znak &amp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <xmp>&euro;</xmp>
+                    </td>
+                    <td>znak &euro;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <dialog open>
+            <p>Co slychac?</p>
+        </dialog>
+
+
 
     </body>
 </html>
