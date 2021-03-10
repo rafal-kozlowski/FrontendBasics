@@ -8,4 +8,62 @@ html{
     font-size: 62.5%;  /* wprowadza sie taka wartosc aby bazowa wielkosc czcionki wynosila 10px - ulatwia to przeliczanie wielkosci. jednostki procentowe sa lepiej skalowalne od jednostek px */
     font-family: 'Open Sans', sans-serif;
     color: #302E33;
+    font-weight: 400;
+}
+
+p, a {
+    font-size: 1.2rem;
+}
+
+header{
+    display: flex;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    background-color: #302E33;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.navbar-logo, .navbar a{
+    font-size: 1.5rem; /*nie rozumiem dlaczego rozmiar czcionki sie nie dziedziczy,
+    jak font-size:1.5rem byl w ".navbar" to dawalo rozmiar czcionki z "p,a ->1.2 rem",
+    kolejnosc zapisu nic nie zmieniala*/
+}
+
+.navbar-logo{
+    margin-right: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar-list{
+    list-style: none;
+    display: flex;
+
+}
+
+.navbar-list-item{
+    margin-right: 1.5rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #BDC3F5;
+}
+
+.navbar a:link{
+    color: #fff;
+}
+
+.navbar a:active{
+    color: #fff;
+}
+
+.navbar-search{
+    position: absolute;
+    right: 3rem;
 }
